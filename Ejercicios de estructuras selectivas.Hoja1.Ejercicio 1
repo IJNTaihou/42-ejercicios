@@ -1,0 +1,25 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 1
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+        //ENTRADA
+	int x;
+	int r;
+        //LOGICA
+	printf("Ingrese un numero: ");
+	cin >> x;
+	r = x % 2;
+	if (r == 0)
+	{
+		printf("Es un numero par");
+	}
+	else
+	{
+		printf("Es un numero impar");
+	}
+	_getch();
+}
