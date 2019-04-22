@@ -1,0 +1,33 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 21
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+	float prestamo;
+	float montopagar;
+
+	//LOGICA
+	cout << "Ingrese el monto del prestamo: ";
+	cin >> prestamo;
+
+	if (prestamo < 5000) {
+		montopagar = prestamo + 0.03*prestamo;
+	}
+	else {
+		if (prestamo > 5000 && prestamo < 10000) {
+			montopagar = prestamo + 0.02*prestamo;
+		}
+		else {
+			montopagar = prestamo + 0.01*prestamo;
+		}
+	}
+
+	//SALIDA
+	cout << "El monto total a pagar es: " << montopagar << endl;
+
+	_getch();
+}
