@@ -1,0 +1,37 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 10
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+	int ambrosoli, tictac, donofrio;
+	float propina, montoTotal;
+
+	//LOGICA CANTIDAD
+	cout << "Ingrese la cantidad de caramelo que va a comprar de tipo Ambrosoli: ";
+	cin >> ambrosoli;
+	cout << "Ingrese la cantidad de caramelo que va a comprar de tipo ticTac: ";
+	cin >> tictac;
+	cout << "Ingrese la cantidad de caramelo que va a comprar de tipo Donofrio: ";
+	cin >> donofrio;
+	//LOGICA MONTO
+	cout << "Ingrese el monto de la propina: ";
+	cin >> propina;
+	//LOGICA APLICADA
+	montoTotal = (ambrosoli*0.75) + (tictac*1.15) + (donofrio*0.65);
+
+	//SALIDA
+	cout << "El monto total de la compra es: " << montoTotal << endl;
+
+	if (montoTotal <= propina) {
+		cout << "La propina es suficiente para pagar los caramelos." << endl;
+	}
+	else {
+		cout << "La propina no es suficiente para pagar los caramelos." << endl;
+	}
+
+	_getch();
+}
