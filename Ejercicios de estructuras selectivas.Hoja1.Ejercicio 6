@@ -1,0 +1,48 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 6
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	//ENTRADA
+	float a, b, c;
+	float valorx;
+	float raiz1, raiz2;
+	float resultado;
+	float discriminante;
+
+	//LOGICA
+	cout << " Ingrese el valor de A, B, C: ";
+	cin >> a;
+	cin >> b;
+	cin >> c;
+
+	cout << " Ingrese el valor para evaluar en x: ";
+	cin >> valorx;
+
+	discriminante = (b * b) - 4 * a*c;
+
+	if (discriminante < 0)
+	{
+		cout << " No existen raices reales ";
+	}
+	else {
+		if (a == 0)
+			if (b == 0)
+				cout << " No existe ecuacion " << endl;
+			else cout << " raiz " << -c / b << endl;
+		else {
+			raiz1 = (-b + (discriminante)) / (2 * a);
+			raiz2 = (-b - (discriminante)) / (2 * a);
+		}
+	}
+
+	//SALIDA
+	resultado = a * valorx*valorx + b * valorx + c;
+	cout << " La raiz 1 es : " << raiz1 << endl;
+	cout << " La raiz 2 es : " << raiz2 << endl;
+	cout << " El resultado de la evaluacion es :" << resultado << endl;
+
+	_getch();
+}
