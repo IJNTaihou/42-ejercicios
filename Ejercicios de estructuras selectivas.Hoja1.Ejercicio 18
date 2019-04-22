@@ -1,0 +1,46 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 18 
+#include <iostream>
+#include <conio.h>
+
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+
+	int posicionTeam; 
+
+	//LOGICA
+
+
+	printf("Ingrese la posicion del equipo en la tabla: ");
+	cin >> posicionTeam;
+
+	if (posicionTeam <= 0)
+	{
+		cout << "Ingrese una posicion mayor a 0";
+	}
+
+	if (posicionTeam >= 1 && posicionTeam <= 4)
+	{
+		cout << "El equipo seleccionado ira al mundial !!!!";
+	}
+	else
+	{
+		if (posicionTeam == 5)
+		{
+			cout << "El equipo seleccionado va al repechaje";
+		}
+		else
+		{
+			if (posicionTeam > 5)
+			{
+				cout << "Comprate una TV LED para ver el mundial !!!";
+			}
+		}
+	}
+
+
+	_getch();
+}
