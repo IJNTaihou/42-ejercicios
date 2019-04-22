@@ -1,0 +1,48 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 27
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+	int ciclo;
+	int cursos;
+	const float precioCurso = 155;
+	float descuento;
+	float costo;
+	float costoFinal;
+
+	//LOGICA
+	cout << "Ingrese el ciclo que esta cursando el alumno: ";
+	cin >> ciclo;
+	cout << "Ingrese el numero de cursos que lleva: ";
+	cin >> cursos;
+
+	costo = precioCurso * cursos;
+
+	if (ciclo >= 1 && ciclo <= 3) {
+		descuento = 0.1*costo;
+	}
+	else {
+		if (ciclo >= 4 && ciclo <= 6) {
+			descuento = 0.15*costo;
+		}
+		else {
+			if (ciclo >= 7 && ciclo <= 8) {
+				descuento = 0.17*costo;
+			}
+			else {
+				descuento = 0.18*costo;
+			}
+		}
+	}
+
+	costoFinal = costo - descuento;
+
+	//SALIDA
+	cout << "El costo es de: " << costoFinal << endl;
+
+	_getch();
+}
