@@ -1,5 +1,4 @@
 Algoritmo Ej1TemaB
-	//ENTRADA
 	Escribir "Ingrese sus años de trabajo: "
 	leer años
 	Escribir "Ingrese su sueldo: "
