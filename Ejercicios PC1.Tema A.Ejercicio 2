@@ -7,11 +7,13 @@ using namespace std;
 
 int main()
 {
+        //ENTRADA
 	string cadena;
 	string dia, mes, año, ciudad, tamaño;
 	bool lima, grande, cantidadA;
 	int añoC, año1, mes1, dia1;
-
+         
+	//LOGICA
 	cout << "Ingrese codigo unico de contribuyente: " << endl;
 	cin >> cadena;
 
@@ -30,7 +32,8 @@ int main()
 
 	cantidadA = (año1 == 2018 && mes1 == 04 && dia1 < 19) || (año1 == 2018 && mes1 < 04) || (año1 < 2018);
 	añoC = (2019 - año1)*cantidadA;
-
+	
+        //SALIDA
 	cout << "Dia de alta: " << dia << endl;
 	cout << "Mes de alta: " << mes << endl;
 	cout << "Año de alta: " << año << endl;
