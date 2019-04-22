@@ -6,12 +6,14 @@ using namespace std;
 
 int main()
 {
+        //ENTRADA
 	int ventas;
 	float sueldo1, incremento, sueldoT;
 	char tienda;
 	bool ventas1, ventas2, ventas3;
 	bool miraflores, surco, lurin, ancon;
 
+        //LOGICA
 	cout << "Ingrese las ventas del colaborador: " << endl;
 	cin >> ventas;
 	cout << "Ingrese el codigo de la tienda: " << endl;
@@ -32,6 +34,7 @@ int main()
 
 	sueldoT = sueldo1 + incremento;
 
+        //SALIDA
 	cout << "El sueldo correspondiente es: " << sueldoT << endl;
 
 	_getch();
