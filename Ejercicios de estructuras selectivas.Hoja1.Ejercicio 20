@@ -1,0 +1,34 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 20 
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+	int creditos;
+
+	//LOGICA
+	cout << "Ingrese la cantidad de creditos acumulados: ";
+	cin >> creditos;
+
+	if (creditos < 32) {
+		cout << "El alumno se encuentra en PRIMER AÑO." << endl;
+	}
+	else {
+		if (creditos >= 32 && creditos <= 63) {
+			cout << "El alumno se encuentra en SEGUNDO AÑO." << endl;
+		}
+		else {
+			if (creditos >= 64 && creditos <= 95) {
+				cout << "El alumno se encuentra en TERCER AÑO." << endl;
+			}
+			else {
+				cout << "El alumno se encuentra en CUARTO AÑO." << endl;
+			}
+		}
+	}
+
+	_getch();
+}
