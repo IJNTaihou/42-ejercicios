@@ -6,12 +6,14 @@ using namespace std;
 
 int main()
 {
+        //ENTRADA
 	char aerolinea, dia;
 	int maletas;
 	bool latam, viva, lunes, viernes, sabado;
 	bool maletas0, maletas1, maletas2;
 	float precio1, incremento, precioF;
 
+        //LOGICA
 	cout << "Ingrese la Aerolínea (L: LATAM, V: Viva):" << endl;
 	cin >> aerolinea;
 	cout << "Día (L: lunes; V: viernes; S: sábado):" << endl;
@@ -35,7 +37,8 @@ int main()
 	incremento = ((precio1 * 15) / 100)*maletas1 + ((precio1 * 30) / 100)*maletas2;
 
 	precioF = precio1 + (incremento)*maletas0;
-
+ 
+        //SALIDA
 	cout << "Precio del ticket:" << precioF << endl;
 
 	_getch();
