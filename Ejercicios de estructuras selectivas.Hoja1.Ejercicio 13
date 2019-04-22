@@ -1,0 +1,36 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 13
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+	int u, d, c;
+	int numero;
+	int numeroNuevo;
+
+	//LOGICA
+	cout << "Ingrese un numero entero de 3 cifras: ";
+	cin >> numero;
+
+	if (numero > 99 && numero < 1000) {
+		c = numero / 100;
+		numero = numero % 100;
+		d = numero / 10;
+		numero = numero % 10;
+		u = numero;
+
+		numeroNuevo = u * 100 + d * 10 + c;
+
+		cout << numeroNuevo<< endl;
+	}
+	else {
+		cout << "Numero incorrecto." << endl;
+	}
+
+	
+
+	_getch();
+}
