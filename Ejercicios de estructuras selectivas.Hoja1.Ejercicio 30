@@ -1,0 +1,158 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 30
+#include <iostream>
+#include <conio.h>
+#include <string>
+
+using namespace std;
+
+void main()
+
+{
+	// ENTRADA
+	int dia;
+	int mes;
+	int año;
+	int residuoD; 
+	int residuoA; 
+	string color;
+
+	// LOGICA
+	printf("Ingresa tu dia de nacimiento: ");
+	cin >> dia;
+
+	printf("Ingresa tu mes de nacimiento: ");
+	cin >> mes;
+
+	printf("Ingresa tu año de nacimiento: ");
+	cin >> año;
+
+	residuoD = (dia % 2);
+	residuoA = (año % 2);
+
+	switch (mes)
+	{
+	case 1:
+	case 2:
+	case 3:
+	{
+
+		if (residuoD == 0 && residuoA == 0)
+		{
+			color = "Rojo";
+		}
+
+		if (residuoD!= 0 && residuoA == 0)
+		{
+			color = "Celeste";
+		}
+
+		if (residuoD == 0 && residuoA!= 0)
+		{
+			color = "Morado";
+		}
+
+		if (residuoD!= 0 && residuoA!= 0)
+		{
+			color = "Negro";
+		}
+
+	}
+
+	break;
+
+	case 4:
+	case 5:
+	case 6:
+
+	{
+
+		if (residuoD == 0 && residuoA == 0)
+		{
+			color = "Naranja";
+		}
+
+		if (residuoD!= 0 && residuoA == 0)
+		{
+			color = "Verde";
+		}
+
+		if (residuoD == 0 && residuoA!= 0)
+		{
+			color = "Turquesa";
+		}
+
+		if (residuoD!= 0 && residuoA!= 0)
+		{
+			color = "Gris";
+		}
+
+	}
+
+	break;
+
+	case 7:
+	case 8:
+	case 9:
+
+	{
+
+		if (residuoD == 0 && residuoA == 0)
+		{
+			color = "Marron";
+		}
+
+		if (residuoD!= 0 && residuoA == 0)
+		{
+			color = "Fucsia";
+		}
+
+		if (residuoD == 0 && residuoA!= 0)
+		{
+			color = "Azul";
+		}
+
+		if (residuoD!= 0 && residuoA!= 0)
+		{
+			color = "Amarillo";
+		}
+
+	}
+
+	break;
+
+	case 10:
+	case 11:
+	case 12:
+
+	{
+
+		if (residuoD == 0 && residuoA == 0)
+		{
+			color = "Violeta";
+		}
+
+		if (residuoD!= 0 && residuoA == 0)
+		{
+			color = "Rosado";
+		}
+
+		if (residuoD == 0 && residuoA!= 0)
+		{
+			color = "Olivo";
+		}
+
+		if (residuoD!= 0 && residuoA!= 0)
+		{
+			color = "Blanco";
+		}
+	}
+	break;
+	}
+
+	cout << "Tu color es: " << color;
+
+
+
+	_getch();
+
+}
