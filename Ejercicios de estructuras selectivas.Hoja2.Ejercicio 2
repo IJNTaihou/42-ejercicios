@@ -1,0 +1,49 @@
+//Ejercicios de estructuras selectivas.Hoja2.Ejercicio 2
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+	char categoria;
+	int horas;
+	int tarifaHora;
+	int totalPagar;
+
+	//LOGICA
+	cout << "Ingrese la categoria: ";
+	cin >> categoria;
+	cout << "Ingrese la cantidad de horas: ";
+	cin >> horas;
+
+	if (categoria == 'A') {
+		tarifaHora = 30;
+	}
+	else {
+		if (categoria == 'B') {
+			tarifaHora = 35;
+		}
+		else {
+			if (categoria == 'C') {
+				tarifaHora = 40;
+			}
+			else {
+				if (categoria == 'D') {
+					tarifaHora = 45;
+				}
+				else {
+					tarifaHora = 50;
+				}
+			}
+		}
+	}
+
+	totalPagar = horas * tarifaHora;
+
+	//SALIDA
+	cout << "El total a pagar al empleado es: " << totalPagar << endl;
+
+	_getch();
+}
