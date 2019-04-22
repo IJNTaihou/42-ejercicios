@@ -1,0 +1,38 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 9
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	// ENTRADA
+
+	int goleslocales;
+	int golesvisitantes;
+
+	//LOGICA
+
+	printf("Ingrese la cantidad de goles del equipo local: ");
+	cin >> goleslocales;
+
+	printf("Ingrese la cantidad de goles del equipo visitante: ");
+	cin >> golesvisitantes;
+
+	if (goleslocales > golesvisitantes)
+	{
+		cout << "Gano el equipo local";
+	}
+	else
+	{
+		if (golesvisitantes > goleslocales)
+		{
+			cout << "Gano el equipo visitante";
+		}
+		else
+		{
+			cout << "Empate";
+		}
+	}
+	_getch();
+}
