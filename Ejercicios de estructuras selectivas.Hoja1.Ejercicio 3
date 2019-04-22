@@ -1,0 +1,26 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 3
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+	float nota;
+
+	//LOGICA
+	cout << "Ingrese la nota del alumno: ";
+	cin >> nota;
+
+	0 < nota < 20;
+
+	if (nota < 12.5) {
+		cout << "Desaprobado " << endl;
+	}
+	else {
+		cout << "Aprobado " << endl;
+	}
+
+	_getch();
+}
