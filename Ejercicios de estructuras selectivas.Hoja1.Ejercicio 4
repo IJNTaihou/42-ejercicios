@@ -1,0 +1,36 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 4
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+	int edad, precioEntrada;
+
+	//LOGICA
+	cout << "Ingrese la edad de la persona: ";
+	cin >> edad;
+
+	edad > 0;
+	if (edad < 18) 
+	{
+		precioEntrada = 7;
+	}
+	else {
+		if (edad >= 18 && edad <= 50) 
+		{
+			precioEntrada = 15;
+		}
+		else
+		{
+			precioEntrada = 5;
+		}
+	}
+
+	//SALIDA
+	cout << "El precio de la entrada es " << precioEntrada << " soles." << endl;
+
+	_getch();
+}
