@@ -1,0 +1,46 @@
+//Ejercicios de estructuras selectivas.Hoja2.Ejercicio 6
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+	int tipo;
+	float consumo;
+	float totalPagar;
+
+	//LOGICA
+	cout << "Ingrese el tipo de consumo realizado(tipo1: comercial.Escribir:1; tipo2: domestico.Escribir:2): ";
+	cin >> tipo;
+	cout << "Ingrese el consumo en KWH: ";
+	cin >> consumo;
+
+	if (tipo == 1) {
+		totalPagar = 1.58*consumo;
+	}
+	else {
+		if (consumo < 100) {
+			cout << "ERROR.";
+		}
+		else {
+			if (consumo == 100) {
+				totalPagar = 0.35 * 100;
+			}
+			else {
+				if (consumo > 100 && consumo <= 500) {
+					totalPagar = 0.35 * 100 + 1.05*(consumo - 100);
+				}
+				else {
+					totalPagar = 0.35 * 100 + 1.05*(consumo - 100) + 1.36*(consumo - 500);
+				}
+			}
+		}
+	}
+
+	//SALIDA
+	cout << "La cantidad total a pagar por el consumo de luz es: " << totalPagar << endl;
+
+	_getch();
+}
