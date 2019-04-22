@@ -1,0 +1,36 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 8
+#include <iostream>
+#include <conio.h>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+
+	char sexo;
+	int edad;
+	int pulsaciones; 
+
+	//LOGICA
+
+	printf("Ingrese el sexo de la persona (F o M): ");
+	cin >> sexo;
+
+	printf("Ingrese la edad de la persona: ");
+	cin >> edad;
+
+	if (sexo == 'M')
+	{
+		pulsaciones = (210 - edad) / 10;
+		cout << "El numero debe ser de " << pulsaciones << " pulsaciones por cada 10 segundos aproximadamente";
+	}
+
+	if (sexo == 'F')
+	{
+		pulsaciones = (220 - edad) / 10;
+		cout << "El numero debe ser de " << pulsaciones << " pulsaciones por cada 10 segundos aproximadamente";
+	}
+	_getch();
+}
