@@ -1,0 +1,29 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 2
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+	float pesodelElefante;
+	float pesodelDinosaurio;
+
+	//LOGICA
+	cout << "Ingrese peso del elefante: ";
+	cin >> pesodelElefante;
+
+	cout << "Ingrese peso del dinosaurio: ";
+	cin >> pesodelDinosaurio;
+
+	if (pesodelElefante > pesodelDinosaurio) {
+		cout << "El elefante pesa mas que el dinosaurio." << endl;
+	}
+	else {
+		cout << "El dinosaurio pesa mas que el elefante." << endl;
+	}
+
+	_getch();
+}
+ 
