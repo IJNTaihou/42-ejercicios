@@ -1,0 +1,24 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 7
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+	int entero1, entero2;
+
+	//LOGICA
+	cout << "Ingrese dos numeros enteros: ";
+	cin >> entero1;
+	cin >> entero2;
+
+	if ((entero1 % entero2) == 0) {
+		cout << entero1 << " es multiplo de " << entero2 << endl;
+	}
+	else {
+		cout << entero1 << " no es multiplo de " << entero2 << endl;
+	}
+	_getch();
+} 
