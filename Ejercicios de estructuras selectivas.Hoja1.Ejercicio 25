@@ -1,0 +1,26 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 25 
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+	int diametro;
+	int	ingredientes;
+	float precio;
+
+	//LOGICA
+	cout << "Ingrese el diametro en cm: ";
+	cin >> diametro;
+	cout << "Ingrese el numero de ingredientes adicionales: ";
+	cin >> ingredientes;
+
+	precio = (1.5*diametro) + (2.5*ingredientes);
+
+	//SALIDA
+	cout << "El precio total de la pizza es: " << precio << endl;
+
+	_getch();
+}
