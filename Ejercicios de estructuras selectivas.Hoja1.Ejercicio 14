@@ -1,0 +1,36 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 14
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+	int numero;
+	int c, d, u;
+
+	//LOGICA
+	cout << "Ingrese un numero entero de 3 cifras: ";
+	cin >> numero;
+
+	if (numero > 99 && numero < 1000) {
+		c = numero / 100;
+		numero = numero % 100;
+		d = numero / 10;
+		numero = numero % 10;
+		u = numero;
+
+		if (c == u) {
+			cout << "Es un numero capicua." << endl;
+		}
+		else {
+			cout << "No es un numero capicua." << endl;
+		}
+	}
+	else {
+		cout << "Numero incorrecto." << endl;
+	}
+
+	_getch();
+}
