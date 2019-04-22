@@ -1,0 +1,47 @@
+//Ejercicios de estructuras selectivas.Hoja2.Ejercicio 5
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+	int dias, mes, año;
+
+	//LOGICA
+	cout << "Ingrese el mes y año: ";
+	cin >> mes >> año;
+
+	if (año % 4 == 0) {
+	if (mes % 2 != 0) {
+	dias = 31;
+	}
+	else {
+	if (mes == 2) {
+				dias = 29;
+	}
+	else {
+	dias = 30;
+	}
+	}
+	}
+	else {
+	if (mes % 2 != 0) {
+	dias = 31;
+	}
+	else {	
+	if (mes == 2) {
+	dias = 28;
+	}
+	else {
+	dias = 30;
+	}
+	}
+	}
+
+	//SALIDA
+	cout << "El numero de dias del mes y anio ingresado es " << dias << " dias." << endl;
+
+	_getch();
+}
