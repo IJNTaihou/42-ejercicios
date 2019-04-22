@@ -1,0 +1,47 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 11
+include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+
+	int consumo;
+	int consumo1;
+
+
+	//LOGICA
+
+	printf("Ingrese la cantidad de GB que consumio: ");
+	cin >> consumo;
+	
+		if (consumo == 0)
+		{
+			cout << "Usted no pagara nada";
+		}
+		else
+		{
+			if (consumo > 0 && consumo <= 4)
+			{
+				cout << "Usted pagara 50 soles ";
+			}
+			else
+			{
+				if (consumo > 4 && consumo <= 8)
+				{
+					cout << "Usted pagara 85 soles";
+				}
+				else
+				{
+					int extra = consumo - 8;
+					consumo1 = extra * 4.50;
+
+					cout << "Usted debera pagar:" << consumo1 + 85 << endl;
+				}
+			}
+		}
+
+		_getch();
+	} 
