@@ -1,0 +1,33 @@
+//Ejercicios de estructuras selectivas.Hoja1.Ejercicio 12
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	//ENTRADA
+
+	int promedio;
+	int faltas;
+
+	//LOGICA
+
+	printf("Ingrese el promedio del alumno: ");
+	cin >> promedio;
+
+	printf("Ingrese el numero de faltas: ");
+	cin >> faltas;
+
+	if (promedio >= 15 && faltas == 0)
+	{
+		cout << "SE OTORGARA LA BECA DEL 30%";
+	}
+	else
+	{
+		cout << "NO SE OTORGARA LA BECA DEL 30%";
+	}
+
+
+	_getch();
+}
