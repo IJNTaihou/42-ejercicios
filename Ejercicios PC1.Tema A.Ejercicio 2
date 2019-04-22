@@ -1,0 +1,42 @@
+//Ejercicios PC1.Tema A.Ejercicio 2
+#include <iostream>
+#include <conio.h>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	string cadena;
+	string dia, mes, año, ciudad, tamaño;
+	bool lima, grande, cantidadA;
+	int añoC, año1, mes1, dia1;
+
+	cout << "Ingrese codigo unico de contribuyente: " << endl;
+	cin >> cadena;
+
+	año = cadena.substr(0, 4);
+	mes = cadena.substr(4, 2);
+	dia = cadena.substr(6, 2);
+	ciudad = cadena.substr(8, 3);
+	tamaño = cadena.substr(11, 1);
+
+	lima = (ciudad == "LIM");
+	grande = (tamaño == "G");
+
+	año1 = int(stoi(año));
+	mes1 = int(stoi(mes));
+	dia1 = int(stoi(dia));
+
+	cantidadA = (año1 == 2018 && mes1 == 04 && dia1 < 19) || (año1 == 2018 && mes1 < 04) || (año1 < 2018);
+	añoC = (2019 - año1)*cantidadA;
+
+	cout << "Dia de alta: " << dia << endl;
+	cout << "Mes de alta: " << mes << endl;
+	cout << "Año de alta: " << año << endl;
+	cout << "Empresa de Lima(0: No; 1: Si): " << lima << endl;
+	cout << "Empresa grande(0: No; 1: Si): " << grande << endl;
+	cout << "Años operando: " << añoC << endl;
+
+	_getch();
+}
